@@ -1,8 +1,47 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   text-align: center;
+  width: 70%;
 }
 
+.app {
+  width: 100%;
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.summary-card {
+  background-color: rgb(227, 224, 224);
+  border-radius: 5px;
+  padding: 1.5rem 5%;
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.summary-card span:first-child {
+  margin-bottom: .5rem;
+}
+
+.list-container {
+  margin-top: 2.5rem;
+  background-color: rgb(227, 224, 224);
+  border-radius: 5px;
+  padding: 2rem 1rem;
+}
+
+.brewery-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  
+}
 
