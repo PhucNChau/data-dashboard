@@ -21,6 +21,7 @@ function App() {
     let response = await fetch(query);
     let json = await response.json();
     setBreweryList(json);
+    setFilteredResults(json);
     var type = new Set(json.map((item) => item.brewery_type));
     setBreweryType([...type]);
     var countries = new Set(json.map((item) => item.country));
