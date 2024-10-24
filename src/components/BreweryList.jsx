@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const BreweryList = ({list}) => {
 
@@ -8,9 +9,9 @@ const BreweryList = ({list}) => {
           <tr>
             <th>Brewery Name</th>
             <th>Type</th>
-            <th>Phone</th>
             <th>State</th>
             <th>Country</th>
+            <th>Details</th>
           </tr>
         </thead>
         <tbody>
@@ -18,9 +19,9 @@ const BreweryList = ({list}) => {
             <tr key={item.id}>
               <td>{item.name}</td>
               <td>{item.brewery_type}</td>
-              <td>{item.phone}</td>
               <td>{item.state}</td>
               <td>{item.country}</td>
+              <td><Link to={`/${item.id}`}>🔗</Link></td>
             </tr>
           ))}
         </tbody>
